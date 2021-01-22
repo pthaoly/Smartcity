@@ -1,0 +1,12 @@
+import matplotlib as mpl
+import numpy as np
+
+import matplotlib.pyplot as plt
+path="/Users/nicoladalheimer/Desktop/Data Science - techlabs/Project_Smart_Cities/Duesseldorf_map.jpeg"
+img = mpl.image.imread(path)
+
+plt.imshow(img)
+
+plt.grid()
+
+plt.show()
