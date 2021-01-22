@@ -1,0 +1,16 @@
+import matplotlib as mpl
+import numpy as np
+
+import matplotlib.pyplot as plt
+path="/Users/nicoladalheimer/Desktop/Data Science - techlabs/Project_Smart_Cities/Duesseldorf_map.jpeg"
+img = mpl.image.imread(path)
+
+fig, ax = plt.subplots()
+ax.imshow(img)
+
+
+ax.set_xticks([100, 200, 500])
+ax.set_yticks([100, 200, 500])
+plt.grid()
+
+plt.show()
