@@ -1,0 +1,28 @@
+# packages
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data= pd.read_excel("Smart City lon lat-2.xlsx")
+
+# data manipulation
+data.point = data.apply(lambda row : row.point.replace(")","").replace("(","").split(",")[:2], axis=1)
+coordinates = data.point.tolist()
+
+
+X = [tmp[0] for tmp in coordinates]
+Y = [tmp[1] for tmp in coordinates]
+
+
+
+# Grid (aber funktioniert wahrscheinlich nicht so richtig)
+
+# Einen x-y-Plot erstellen:
+plt.plot(X, Y, 'bo')
+
+# Ein gepunktetes Diagramm-Gitter einblenden:
+plt.grid(True)
+
+# Diagramm anzeigen:
+plt.show()
