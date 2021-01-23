@@ -14,12 +14,17 @@ coordinates = data.point.tolist()
 X = [tmp[0] for tmp in coordinates]
 Y = [tmp[1] for tmp in coordinates]
 
+# Turn String list into Float list
 
+XF=map(float, X)
+x= list(XS)
 
-# Grid (aber funktioniert wahrscheinlich nicht so richtig)
+YF=map(float, Y)
+y= list(YF)
 
+# Grid
 # Einen x-y-Plot erstellen:
-plt.plot(X, Y, 'bo')
+plt.plot(x, y, 'bo')
 
 # Ein gepunktetes Diagramm-Gitter einblenden:
 plt.grid(True)
