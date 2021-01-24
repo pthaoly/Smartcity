@@ -17,7 +17,7 @@ Y = [tmp[1] for tmp in coordinates]
 # Turn String list into Float list
 
 XF=map(float, X)
-x= list(XS)
+x= list(XF)
 
 YF=map(float, Y)
 y= list(YF)
