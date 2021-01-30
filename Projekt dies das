@@ -22,6 +22,9 @@ x= list(XF)
 YF=map(float, Y)
 y= list(YF)
 
+# drop columns
+data = data.drop(columns = ["Unnamed: 0","City", "Address", "Postal Code", "location"])
+
 # Grid Code
 
 # Read excelfile and transform to list 
