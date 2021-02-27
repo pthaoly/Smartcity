@@ -66,14 +66,14 @@ data = pd.read_excel("Techlabss.xlsx")
 x= data.Longitude
 y=data.Latitude
 
-# Grid
+# creating Grid
 xgg = np.linspace(min(x), max(x), 10)
 ygg = np.linspace(min(y), max(y), 10)
 x_1g, y_1g = np.meshgrid(xgg, ygg)
 plt.plot(x_1g, y_1g, ".k")
 plt.show()
 
-# Matthias Code
+# Get schools for each cell in the grid
 def read(path): 
     
     liste = pd.read_excel(path)
